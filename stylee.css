@@ -40,11 +40,11 @@ body{
     margin-left: 130px;
 }
 
-.input-group{
+.input-groups{
     margin-bottom:20px;
 }
 
-.input-group input{
+.input-groups input{
     width:100%;
     height:60px;
     border:1px solid #222222;     
@@ -84,78 +84,103 @@ button{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Segoe UI,sans-serif;
+    font-family:'Segoe UI', sans-serif;
 }
 
 body{
-    min-height:100vh;
+    background:#f4f6f9;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#f5f7fa;
+    min-height:100vh;
+    padding:20px;
 }
 
 .signup-container{
     width:100%;
-    padding:20px;
+    display:flex;
+    justify-content:center;
 }
 
 .signup-box{
-    width:550px;
-    margin:auto;
+    width:450px;
     background:white;
-    padding:50px;
+    padding:40px;
     border-radius:20px;
-    box-shadow:0 0 20px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
 .signup-box h1{
-    font-size:40px;
+    text-align:center;
+    color:#222;
     margin-bottom:10px;
-    margin-left: 70px;
 }
 
-.signup-box p{
+.subtitle{
+    text-align:center;
+    color:#777;
     margin-bottom:30px;
-    color:#666;
-    margin-left: 160px;
 }
 
-.signup-box input{
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group input{
     width:100%;
-    height:50px;
-    margin-bottom:20px;
-    border:1px solid #353434;
+    height:55px;
+    border:1px solid #ddd;
     border-radius:12px;
-    padding:0 20px;
-    font-size:18px;
+    padding:0 15px;
+    font-size:16px;
+    outline:none;
 }
 
-.checkbox1{
-    display: flex;
-    text-align: center;
+.input-group input:focus{
+    border-color:#16a34a;
 }
 
-.checkbox1 p{
-    color: black;
+.password-box{
+    position:relative;
 }
 
+.toggle{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#888;
+    cursor:pointer;
+}
+
+.remember,
 .terms{
-    position: relative;
-    bottom: 13px;
-    width: 15px;
-
+    margin-bottom:18px;
+    color:#555;
 }
 
-button{
+.remember label,
+.terms label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.signup-btn{
     width:100%;
-    height:60px;
+    height:55px;
     border:none;
     border-radius:12px;
-    background:#14a800;
+    background:#13a506;
     color:white;
-    font-size:18px;
+    font-size:17px;
+    font-weight:bold;
     cursor:pointer;
+    transition:.3s;
+}
+
+.signup-btn:hover{
+    background:#15803d;
 }
 
 .login-link{
@@ -163,59 +188,150 @@ button{
     margin-top:20px;
 }
 
-@media (max-width: 425px){
-    .login-box h1{
-        font-size: 30px;
-        margin-left: 50px;
-    }
-
-    .login-box p{
-        margin-left: 75px;
-        font-size: 15px;
-    }
+.login-link a{
+    color:#16a34a;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-@media (max-width: 375px){
-    .login-box h1{
-        font-size: 25px;
-        margin-left: 40px;
-    }
+@media(max-width:425px){
 
-    .login-box p{
-        margin-left: 60px;
-        font-size: 13px;
-    }
-
-    .options{
-        font-size: 12px;
-    }
+.signup-box{
+    width:100%;
+    padding:30px 20px;
 }
 
-@media (max-width: 320px){
-    .login-box h1{
-        font-size: 20px;
-        margin-left: 30px;
-    }
+.signup-box h1{
+    font-size:28px;
+}
 
-    .login-box p{
-        margin-left: 45px;
-        font-size: 11px;
-    }
+.input-group input{
+    height:50px;
+}
 
-    .input-group input{
-        font-size: 14px;
-        height: 40px;
-    }
+.login-box h1{
+    font-size: 30px;
+    margin-left: 20px;
+}
 
-    .options{
-        font-size: 10px;
-    }
+.login-box p{
+    margin-left: 45px;
+}
 
-    button{
-        height: 40px
-    }
+.options{
+    font-size: 10px;
+}
+}
 
-    .signup-link{
-        font-size: 10px;
-    }
+@media(max-width:375px){
+
+.signup-box{
+    padding:25px 18px;
+}
+
+.signup-box h1{
+    font-size:25px;
+}
+
+.subtitle{
+    font-size:14px;
+}
+
+.input-group input{
+    font-size:14px;
+}
+
+.signup-btn{
+    font-size:15px;
+}
+
+.login-box h1{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.login-box p{
+    margin-left: 35px;
+    font-size: 14px;
+}
+
+.signup-link{
+    font-size: 11px;
+}
+
+}
+
+@media(max-width:320px){
+
+.signup-box{
+    padding:20px 15px;
+}
+
+.signup-box h1{
+    font-size:22px;
+}
+
+.subtitle{
+    font-size:13px;
+}
+
+.input-group input{
+    height:45px;
+    font-size:13px;
+}
+
+.signup-btn{
+    height:48px;
+    font-size:14px;
+    margin-left: 20px;
+}
+
+.remember,
+.terms{
+    font-size:12px;
+}
+
+.login-box h1{
+    font-size: 17px;
+    margin-left: 12px;
+}
+
+.login-box p{
+    margin-left: 23px;
+    font-size: 10px;
+}
+
+.options{
+    font-size: 8px;
+    align-items: center;
+}
+
+.options input{
+    width: 9px;
+}
+
+.signup-link{
+    font-size: 8px;
+}
+
+.signup-link a{
+    font-size: 7px;
+}
+
+.input-groups input{
+    height: 35px;
+    width: 130%;
+    position: relative;
+    right: 20px;
+    font-size: 10px;
+}
+
+button{
+    height: 30px;
+    width: 130%;
+    position: relative;
+    right: 20px;
+}
+
+
 }
