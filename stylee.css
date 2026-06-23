@@ -224,6 +224,10 @@ body{
     right: 35px;
 }
 
+.signup-btn{
+    margin-left: 35px;
+}
+
 .options a{
     position: relative;
     left: 70px;
@@ -235,7 +239,7 @@ body{
 }
 
 .input-groups input{
-    height: 25px;
+    height: 38px;
     width: 130%;
     position: relative;
     right: 35px;
@@ -244,7 +248,7 @@ body{
 }
 
 button{
-    height: 25px;
+    height: 38px;
     font-size: 15px;
     width: 130%;
     position: relative;
@@ -327,7 +331,7 @@ button{
 .signup-btn{
     height:48px;
     font-size:14px;
-    margin-left: 20px;
+    margin-left: 35px;
 }
 
 .remember,
@@ -368,7 +372,7 @@ button{
 }
 
 .input-groups input{
-    height: 25px;
+    height: 29px;
     width: 150%;
     position: relative;
     right: 35px;
@@ -377,7 +381,7 @@ button{
 }
 
 button{
-    height: 25px;
+    height: 29px;
     font-size: 15px;
     width: 150%;
     position: relative;
