@@ -1488,7 +1488,7 @@ html,body{
     .nav-links{
         position: absolute;
         top: 80px;
-        left: -100%;
+        left: -140%;
         width: 100%;
         background: white;
         flex-direction: column;
@@ -1633,6 +1633,10 @@ html,body{
         width: 28%;
     }
 
+    .PTE{
+        font-size: 33px;
+    }
+
     .images{
         width: 10px;
         gap: 6px;
@@ -1663,6 +1667,10 @@ html,body{
         position: relative;
         right: 30px;
     }
+
+    .PTE{
+        font-size: 29px;
+    }
 }
 
 @media (max-width:320px){
@@ -1670,6 +1678,9 @@ html,body{
         width: 42%;
     }
 
+    .PTE{
+        font-size: 25px;
+    }
     .BUTTON2 p a{
         font-size: 12px;
     }
